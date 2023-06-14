@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Automatic Website Opener</title>
+    <style>
+        body {
+    text-align: center;
+    padding: 50px;
+}
+
+h1 {
+    color: #333;
+}
+
+    </style>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Automatic Website Opener</h1>
+
+    <script src="script.js"></script>
+    <script>
+        window.onload = function() {
+    var url = 'dsw.html'; // Change this URL to the website you want to open
+
+    var userAgent = navigator.userAgent.toLowerCase();
+    var isDesktop = userAgent.indexOf('mobile') === -1;
+
+    if (isDesktop) {
+        window.location.href = url;
+    } else {
+        alert('This website can only be opened in desktop mode.');
+    }
+};
+
+    </script>
+</body>
+</html>
