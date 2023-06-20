@@ -14,11 +14,32 @@ h1 {
 
     </style>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="loading bt sushant verma/loading.css">
 </head>
 <body>
-    <h1>Automatic Website Opener 2</h1>
+    <div id="circle-container">
+        <div id="circle">
+          <span id="letter">D</span>
+          
+        </div>
+         <div id="circle" >
+          <span id="letter">S</span>
+          
+        </div>
+         <div id="circle">
+          <span id="letter">W</span>
+          
+        </div>
+      </div>
+      
+      
+        <div id="main-page" style="display: none;">
+          <!-- Add your main page content here -->
+          <h1> On Desktop Mode</h1>
+        </div>
 
     <script src="script.js"></script>
+    <script src="loading bt sushant verma/loading.js"></script>
    
     </script>
       <script>
@@ -26,7 +47,7 @@ h1 {
     var url = 'dsw.html'; // Change this URL to the website you want to open
 
     var userAgent = navigator.userAgent.toLowerCase();
-    var isDesktop = userAgent.indexOf('mobile') === -1;
+    var isDesktop = userAgent.indexOf('isDesktop') === -1;
 
     if (isDesktop) {
         window.location.href = url;
